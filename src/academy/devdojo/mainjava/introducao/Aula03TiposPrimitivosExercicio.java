@@ -1,7 +1,7 @@
 package academy.devdojo.mainjava.introducao;
 /*
 Eu <nome>, morando no endereço <endereço>,
-confirmo que recebi o salário de <salario>, na data: <data>
+confirmo que recebi o salário de <salarios>, na data: <data>
  */
 public class Aula03TiposPrimitivosExercicio {
     public static void main(String[] args) {

@@ -3,7 +3,7 @@ package academy.devdojo.mainjava.javacore.Bintroducaometodos.teste;
 import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.Estudante;
 import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.ImpressoraEstudante;
 
-public class EstudanteTeste01 {
+public class EstudanteTest01 {
     public static void main(String[] args) {
         Estudante estudante01 = new Estudante();
         Estudante estudante02 = new Estudante();
