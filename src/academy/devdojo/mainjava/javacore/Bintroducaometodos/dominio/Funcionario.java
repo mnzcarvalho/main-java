@@ -1,9 +1,10 @@
 package academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salarios;
+    private String nome;
+    private int idade;
+    private double[] salarios;
+    private double media;
 
     public void imprime() {
         int i = 1;
@@ -12,10 +13,10 @@ public class Funcionario {
         if (salarios == null) {
             return;
         }
-            for (double salario : salarios) {
-                System.out.print("Salario " + i + ": R$" + salario + ", ");
-                i = i + 1;
-            }
+        for (double salario : salarios) {
+            System.out.print("Salario " + i + ": R$" + salario + ", ");
+            i = i + 1;
+        }
 
         imprimeMediaSalarial();
     }
@@ -24,8 +25,6 @@ public class Funcionario {
         if (salarios == null) {
             return;
         }
-        double media = 0;
-
         for (double salario : salarios) {
             media += salario;
         }
@@ -33,7 +32,32 @@ public class Funcionario {
 
         System.out.println("\nA média salarial foi de: R$" + media);
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public double getMedia() {
+        return media;
+    }
 }
-//        System.out.println("Salário 1: R$" + this.salarios[0]);
-//        System.out.println("Salário 2: R$" + this.salarios[1]);
-//        System.out.println("Salário 3: R$" + this.salarios[2]);
