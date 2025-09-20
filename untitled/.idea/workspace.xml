@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a54f0e1d-fd89-4adb-affc-de6521ed2b61" name="Changes" comment="" />
+    <list default="true" id="a54f0e1d-fd89-4adb-affc-de6521ed2b61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../src/academy/devdojo/mainjava/introducao/Aula07Arrays04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/academy/devdojo/mainjava/introducao/Aula07Arrays04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/academy/devdojo/mainjava/javacore/Bintroducaometodos/teste/CalculadoraTest02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/academy/devdojo/mainjava/javacore/Bintroducaometodos/teste/CalculadoraTest02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2uDcHRTWbvQ3v6KZVhYyZpr7CmC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,6 +30,8 @@
     "Application.HelloWorld.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/CODE/JAVA/MAIN_JAVA",
     "onboarding.tips.debug.path": "D:/CODE/JAVA/MAIN_JAVA/untitled/src/Main.java"
@@ -42,17 +51,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="MAIN_JAVA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="MAIN_JAVA" />
-      <option name="filePath" />
-      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>

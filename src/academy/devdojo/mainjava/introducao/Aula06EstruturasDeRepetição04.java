@@ -7,7 +7,7 @@ public class Aula06EstruturasDeRepetição04 {
         float valorTotal = 30000;
         for (float parcela = 1; parcela <= valorTotal; parcela++) {
             float valorParcela = valorTotal / parcela;
-            System.out.println("Primeira parcela: "+parcela+" x R$"+valorParcela);
+            System.out.println("Parcela: "+parcela+" x R$" +valorParcela);
             if (valorParcela == 1000){
                 break;
             }

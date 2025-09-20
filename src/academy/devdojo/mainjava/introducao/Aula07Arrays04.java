@@ -7,7 +7,7 @@ public class Aula07Arrays04 {
 //        for (int i = 0; i < numeros2.length; i++) {
 //            System.out.println(numeros2[i]);
 //        }
-        for(int num:numeros2){
+        for(int num:numeros2){                        //Foreach vai percorrer todas as posições do array
             System.out.println(num);
         }
     }
