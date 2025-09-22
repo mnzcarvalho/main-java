@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.dominioEx;
+package academy.devdojo.mainjava.javacore.Gassociacao.dominioSisCompleto;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.dominioEx;
+package academy.devdojo.mainjava.javacore.Gassociacao.dominioSisCompleto;
 
 public class Aluno {
     private String nome;
@@ -8,12 +8,6 @@ public class Aluno {
     public Aluno(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
-    }
-
-    public Aluno(String nome, int idade, Seminario seminario) {
-        this.nome = nome;
-        this.idade = idade;
-        this.seminario = seminario;
     }
 
     public String getNome() {
@@ -38,5 +32,10 @@ public class Aluno {
 
     public void setSeminario(Seminario seminario) {
         this.seminario = seminario;
+    }
+
+    @Override
+    public String toString(){
+        return "Aluno: " + nome + " (Idade: " + idade + ")";
     }
 }

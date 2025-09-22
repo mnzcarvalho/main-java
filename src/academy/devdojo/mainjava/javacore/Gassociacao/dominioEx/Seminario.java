@@ -1,78 +1,52 @@
 package academy.devdojo.mainjava.javacore.Gassociacao.dominioEx;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Seminario {
-    private String titulo;
-    private Professor professor;
+    private String titutlo;
+    private Aluno[] alunos;
     private Local local;
-    private List<Aluno> alunos;
 
-    public Seminario(String titulo, Professor professor, Local local) {
-        this.titulo = titulo;
-        this.professor = professor;
+    public Seminario(String titutlo) {
+        this.titutlo = titutlo;
+    }
+
+    public Seminario(String titutlo, Aluno[] seminarios) {
+        this.titutlo = titutlo;
+        this.alunos = seminarios;
+    }
+
+    public Seminario(Local local, String titutlo) {
         this.local = local;
-        this.alunos = new ArrayList<>(); // Inicialização da lista
+        this.titutlo = titutlo;
     }
 
-    //Metodo para adicionar aluno
-    public void adicionarAluno(Aluno aluno) {
-        if (aluno.getSeminario() != null) {
-            System.out.println("Aluno: " + aluno.getNome() + "Já está em outro seminário!");
-            return;
-        }
-        alunos.add(aluno);
-        aluno.setSeminario(this);
-        System.out.println("Aluno: " + aluno.getNome() + " adicionado ao seminário: " + titulo);
+    public Seminario(String titutlo, Aluno[] alunos, Local local) {
+        this.titutlo = titutlo;
+        this.alunos = alunos;
+        this.local = local;
     }
 
-    //Metodo para remover aluno
-    public void removeAluno(Aluno aluno) {
-        if (alunos.remove(aluno)) {
-            aluno.setSeminario(null);
-            System.out.println("Aluno: " + aluno.getNome() + " foi removido do seminário: " + titulo);
-        } else {
-            System.out.println("Aluno não encontrado nesse seminário!");
-        }
+    public String getTitutlo() {
+        return titutlo;
     }
 
-    //Metodo para exibir informações do seminário
-    public void exibirInformacoes() {
-        System.out.println("===Seminário===");
-        System.out.println("Título: " + titulo);
-        System.out.println(professor);
-        System.out.println(local);
-        System.out.println("Alunos inscritos: " + alunos.size());
-
-        if (!alunos.isEmpty()) {
-            System.out.println("Lista de alunos: ");
-            for (Aluno aluno : alunos) {
-                System.out.println(" - " + aluno.getNome() + " (" + aluno.getIdade() + " anos");
-
-            }
-
-        }
-        System.out.println("==============================");
+    public void setTitutlo(String titutlo) {
+        this.titutlo = titutlo;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public Aluno[] getSeminarios() {
+        return alunos;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setSeminarios(Aluno[] seminarios) {
+        this.alunos = seminarios;
     }
 
-    public Professor getProfessor() {
-        return professor;
+    public Aluno[] getAlunos() {
+        return alunos;
     }
 
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
+    public void setAlunos(Aluno[] alunos) {
+        this.alunos = alunos;
     }
 
     public Local getLocal() {
@@ -82,14 +56,4 @@ public class Seminario {
     public void setLocal(Local local) {
         this.local = local;
     }
-
-    public List<Aluno> getAlunos() {
-        return alunos;
-    }
-
-    @Override
-    public String toString(){
-        return "Seminário " + titulo + "- Ministrado por: " + professor.getNome();
-    }
 }
-

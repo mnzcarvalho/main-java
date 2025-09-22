@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.dominioEx;
+package academy.devdojo.mainjava.javacore.Gassociacao.dominioSisCompleto;
 
 public class Local {
     private String endereco;
@@ -13,5 +13,10 @@ public class Local {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    @Override
+    public String toString() {
+        return "Local: " + endereco;
     }
 }
