@@ -1,6 +1,6 @@
 package academy.devdojo.mainjava.javacore.Isobrescrita.domain;
 
-public class Anime {
+public class Anime extends Object{
     private String nome;
 
     @Override
@@ -9,9 +9,8 @@ public class Anime {
                 "nome='" + nome + '\'' +
                 '}';
     }
-
-    public Anime(String nome) {
-        this.nome = nome;
+    public Anime(String nome) { //nome.toString()
+        this.nome = nome;       //getClass().getName() + '@' + Integer.toHexString(hashCode())
     }
 
     public String getNome() {
