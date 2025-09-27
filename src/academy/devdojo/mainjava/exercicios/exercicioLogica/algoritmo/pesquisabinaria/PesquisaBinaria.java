@@ -1,8 +1,8 @@
-package academy.devdojo.mainjava.exercicioLogica.ex006;
+package academy.devdojo.mainjava.exercicios.exercicioLogica.algoritmo.pesquisabinaria;
 
 //Algoritmo de Busca - Pesquisa Binária
 
-public class ex006 {
+public class PesquisaBinaria {
     public static void main(String[] args) {
 
         int [] array = {1, 5, 8, 10, 12, 15, 20};
