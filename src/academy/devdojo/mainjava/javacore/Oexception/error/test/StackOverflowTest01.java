@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Oexception.test;
+package academy.devdojo.mainjava.javacore.Oexception.error.test;
 
-public class StackOverFlowTest01 {
+public class StackOverflowTest01 {
     public static void main(String[] args) {
         recursividade();
     }

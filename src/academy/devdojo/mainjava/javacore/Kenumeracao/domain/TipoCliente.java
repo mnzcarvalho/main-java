@@ -12,7 +12,7 @@ public enum TipoCliente {
         this.VALOR = valor;
         this.nomeRelatorio = nomeRelatorio;
     }
-    //Dessa forma o retorno da cosntate(enum) se dá atravez do atributo que você escolher (nomeRelatorio no caso)
+    //Dessa forma o retorno da cosntante(enum) se dá atravez do atributo que você escolher (nomeRelatorio no caso)
     public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
         for (TipoCliente tipoCliente : values()) {
             if (tipoCliente.getNomeRelatorio().equals(nomeRelatorio)) {
