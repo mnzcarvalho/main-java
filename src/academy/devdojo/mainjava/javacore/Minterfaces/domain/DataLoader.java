@@ -3,6 +3,8 @@ package academy.devdojo.mainjava.javacore.Minterfaces.domain;
 //por padrão, no JAVA, qnd se cria um metodo eles são públicos e abstratos (na interface)
 // private -> defautl -> protected -> public
 //todos os atributos em uma interface são constantes
+//Metodos default não precisam ser implementados obrigatoriamente
+
 
 public interface DataLoader {
     public static final int MAX_DATA_SIZE = 10;
