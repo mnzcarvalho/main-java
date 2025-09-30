@@ -27,3 +27,4 @@ bin/
 
 ### Mac OS ###
 .DS_Storereturn-java/
+src/out/
