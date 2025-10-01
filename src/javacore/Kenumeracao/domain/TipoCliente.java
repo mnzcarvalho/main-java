@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Kenumeracao.domain;
+package javacore.Kenumeracao.domain;
 
 public enum TipoCliente {
     //Atributos como se fossem constante, static

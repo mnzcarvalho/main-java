@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Minterfaces.domain;
+package javacore.Minterfaces.domain;
 
 public class DatabaseLoader implements DataLoader, DataRemover {
 

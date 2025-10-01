@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.LogicaBasica.ex001;
+package exercicios.LogicaBasica.ex001;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.algoritmo.pesquisabinaria;
+package exercicios.algoritmo.pesquisabinaria;
 
 //Algoritmo de Busca - Pesquisa Binária
 

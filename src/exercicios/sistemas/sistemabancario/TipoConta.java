@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.sistemas.sistemabancario;
+package exercicios.sistemas.sistemabancario;
 
 public enum TipoConta {
     CORRENTE("Conta Corrente", 0.01),

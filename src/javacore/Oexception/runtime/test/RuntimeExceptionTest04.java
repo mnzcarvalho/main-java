@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Oexception.runtime.test;
+package javacore.Oexception.runtime.test;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;

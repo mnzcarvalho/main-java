@@ -1,5 +1,5 @@
-package academy.devdojo.mainjava.javacore.Bintroducaometodos.teste;
-import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.Funcionario;
+package javacore.Bintroducaometodos.teste;
+import javacore.Bintroducaometodos.dominio.Funcionario;
 
 public class FuncionarioTest01 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Hheranca.test;
+package javacore.Hheranca.test;
 
-import academy.devdojo.mainjava.javacore.Hheranca.domain.Funcionario;
+import javacore.Hheranca.domain.Funcionario;
 //Sequencia de inicialização
 //Quando se tem herança a SUPER-CLASSE sempre precisa ser inicializada primeiro
 

@@ -1,7 +1,7 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.test;
+package javacore.Gassociacao.test;
 
-import academy.devdojo.mainjava.javacore.Gassociacao.dominio.Escola;
-import academy.devdojo.mainjava.javacore.Gassociacao.dominio.Professor;
+import javacore.Gassociacao.dominio.Escola;
+import javacore.Gassociacao.dominio.Professor;
 
 public class EscolaTest01 {
     public static void main(String[] args) {

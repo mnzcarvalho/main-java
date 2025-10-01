@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Minterfaces.domain;
+package javacore.Minterfaces.domain;
 
 //por padrão, no JAVA, qnd se cria um metodo eles são públicos e abstratos (na interface)
 // private -> defautl -> protected -> public

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio;
+package javacore.Bintroducaometodos.dominio;
 
 //QUANDO SE PASSA OBJETOS COMO ARGUMENTOS ESTÁ SE PASSANDO A REFERÊNCIA A ONDE ELE ESTÁ GUARDADO
 public class ImpressoraEstudante {

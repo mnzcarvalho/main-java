@@ -1,9 +1,9 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.testEx;
+package javacore.Gassociacao.testEx;
 
-import academy.devdojo.mainjava.javacore.Gassociacao.dominioEx.Aluno;
-import academy.devdojo.mainjava.javacore.Gassociacao.dominioEx.Local;
-import academy.devdojo.mainjava.javacore.Gassociacao.dominioEx.Professor;
-import academy.devdojo.mainjava.javacore.Gassociacao.dominioEx.Seminario;
+import javacore.Gassociacao.dominioEx.Aluno;
+import javacore.Gassociacao.dominioEx.Local;
+import javacore.Gassociacao.dominioEx.Professor;
+import javacore.Gassociacao.dominioEx.Seminario;
 
 public class SistemaSeminarioTest {
     public static void main(String[] args) {

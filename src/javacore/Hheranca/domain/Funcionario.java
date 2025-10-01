@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Hheranca.domain;
+package javacore.Hheranca.domain;
 
 //super = super-classe
 //todas as classes no java são "filhas" da classe Object

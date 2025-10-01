@@ -1,7 +1,7 @@
-package academy.devdojo.mainjava.javacore.Lclassesabstratas.test;
+package javacore.Lclassesabstratas.test;
 
-import academy.devdojo.mainjava.javacore.Lclassesabstratas.domain.Desenvolvedor;
-import academy.devdojo.mainjava.javacore.Lclassesabstratas.domain.Gerente;
+import javacore.Lclassesabstratas.domain.Desenvolvedor;
+import javacore.Lclassesabstratas.domain.Gerente;
 
 public class FuncionarioTest01 {
     public static void main(String[] args) {

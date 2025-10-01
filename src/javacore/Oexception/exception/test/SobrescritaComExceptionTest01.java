@@ -1,8 +1,8 @@
-package academy.devdojo.mainjava.javacore.Oexception.exception.test;
+package javacore.Oexception.exception.test;
 
-import academy.devdojo.mainjava.javacore.Oexception.exception.domain.Funcionario;
-import academy.devdojo.mainjava.javacore.Oexception.exception.domain.LoginInvalidoException;
-import academy.devdojo.mainjava.javacore.Oexception.exception.domain.Pessoa;
+import javacore.Oexception.exception.domain.Funcionario;
+import javacore.Oexception.exception.domain.LoginInvalidoException;
+import javacore.Oexception.exception.domain.Pessoa;
 
 import java.io.FileNotFoundException;
 

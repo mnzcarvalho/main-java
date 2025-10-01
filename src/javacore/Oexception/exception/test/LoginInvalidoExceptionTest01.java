@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Oexception.exception.test;
+package javacore.Oexception.exception.test;
 
-import academy.devdojo.mainjava.javacore.Oexception.exception.domain.LoginInvalidoException;
+import javacore.Oexception.exception.domain.LoginInvalidoException;
 
 import java.util.Scanner;
 

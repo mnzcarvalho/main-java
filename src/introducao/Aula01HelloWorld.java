@@ -6,7 +6,7 @@ este é um comentário de mulitiplas linhas
  * Isso é um comentário <b>javadoc</b>
  */
 
-package academy.devdojo.mainjava.introducao;
+package introducao;
 
 class Aula01HelloWorld {
     public static void main (String[] args){

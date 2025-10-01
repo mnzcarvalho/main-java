@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 //Arrays são objetos
 // variavel do tipo reference ( int [] idades = )
 // que faz referencia a um objeto (array) de 3 posições. ( new int[3]; )

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Lclassesabstratas.domain;
+package javacore.Lclassesabstratas.domain;
 
 public class Desenvolvedor extends Funcionario{
     public Desenvolvedor(String nome, double salario) {

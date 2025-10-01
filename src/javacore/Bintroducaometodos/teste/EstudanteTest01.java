@@ -1,7 +1,7 @@
-package academy.devdojo.mainjava.javacore.Bintroducaometodos.teste;
+package javacore.Bintroducaometodos.teste;
 
-import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.Estudante;
-import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.ImpressoraEstudante;
+import javacore.Bintroducaometodos.dominio.Estudante;
+import javacore.Bintroducaometodos.dominio.ImpressoraEstudante;
 
 public class EstudanteTest01 {
     public static void main(String[] args) {

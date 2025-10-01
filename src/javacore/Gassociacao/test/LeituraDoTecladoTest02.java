@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.test;
+package javacore.Gassociacao.test;
 
 import java.util.Scanner;
 

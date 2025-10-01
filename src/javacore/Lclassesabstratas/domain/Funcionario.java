@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Lclassesabstratas.domain;
+package javacore.Lclassesabstratas.domain;
 
 //Abstract vai evitar a criação da classe funcionário
 //Funcionário só servira como um template, uma classe criara para ser uma superclasse

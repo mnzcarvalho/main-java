@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.sistemas.sistemabancario;
+package exercicios.sistemas.sistemabancario;
 
 public class ContaCorrente extends Conta implements Tributavel{
     private static final double LIMITE_SAQUE = 2000;

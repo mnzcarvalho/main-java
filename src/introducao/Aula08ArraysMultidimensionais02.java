@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 
 //Tipos de inicialização de Arrays Multidimensionais
 public class Aula08ArraysMultidimensionais02 {

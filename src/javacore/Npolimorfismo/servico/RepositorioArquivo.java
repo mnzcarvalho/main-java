@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Npolimorfismo.servico;
+package javacore.Npolimorfismo.servico;
 
-import academy.devdojo.mainjava.javacore.Npolimorfismo.repositorio.Repositorio;
+import javacore.Npolimorfismo.repositorio.Repositorio;
 
 public class RepositorioArquivo implements Repositorio {
 

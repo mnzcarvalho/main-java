@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Oexception.runtime.test;
+package javacore.Oexception.runtime.test;
 //O bloco finally sempre vai ser chamado
 public class RuntimeExceptionTest03 {
     public static void main(String[] args) {

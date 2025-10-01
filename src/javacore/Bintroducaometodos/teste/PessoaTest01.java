@@ -1,7 +1,7 @@
-package academy.devdojo.mainjava.javacore.Bintroducaometodos.teste;
+package javacore.Bintroducaometodos.teste;
 // Modificador de acesso private, get e set pt 01
 
-import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.Pessoa;
+import javacore.Bintroducaometodos.dominio.Pessoa;
 
 public class PessoaTest01 {
     public static void main(String[] args) {

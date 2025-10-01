@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Hheranca.domain;
+package javacore.Hheranca.domain;
 
 public class Endereco {
     private String rua;

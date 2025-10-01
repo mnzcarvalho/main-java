@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio;
+package javacore.Bintroducaometodos.dominio;
 
 public class Pessoa {
     private String nome;

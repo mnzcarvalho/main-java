@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.sistemas.sistemabancario;
+package exercicios.sistemas.sistemabancario;
 
 public class LimiteExcedidoException extends RuntimeException {
     public LimiteExcedidoException(String message) {

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.sistemas.sistemabancario;
+package exercicios.sistemas.sistemabancario;
 
 public class SistemaBancario {
     public static void main(String[] args) {

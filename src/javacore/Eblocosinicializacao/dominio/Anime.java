@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Eblocosinicializacao.dominio;
+package javacore.Eblocosinicializacao.dominio;
 
 // 1 - Primeiro é alocado um espaço em memória para o objeto criado
 // 2 - Cada atributo de classe é criado e inicializado com valores Default ou o que for passado

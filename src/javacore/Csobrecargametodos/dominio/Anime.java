@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Csobrecargametodos.dominio;
+package javacore.Csobrecargametodos.dominio;
 //sobrecarga de métodos
 public class Anime {
     private String nome;

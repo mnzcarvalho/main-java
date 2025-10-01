@@ -1,9 +1,9 @@
-package academy.devdojo.mainjava.exercicios.estruturadedados.linkedlist.criandolinkedlist;
+package exercicios.estruturadedados.linkedlist.criandolinkedlist;
 //adicionar e pegar elementos de uma lista
 
 public class Programa {
     public static void main(String[] args) {
-        ListaLigada lista = new ListaLigada();
+        ListaLigada<String> lista = new ListaLigada<String>();
         lista.adicionar("AC");
         lista.adicionar("BA");
         lista.adicionar("CE");
@@ -12,6 +12,7 @@ public class Programa {
         System.out.println("Primeiro elemento: " + lista.getPrimeiro().getValor());
         System.out.println("Ultimo elemento: " + lista.getUltimo().getValor());
 
+        System.out.println("Tamanho: " + lista.getTamanho());
         for (int i = 0; i < lista.getTamanho(); i++) {
             System.out.println("Estado: " + lista.get(i).getValor());
         }

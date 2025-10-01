@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.fixacao.interface01;
+package exercicios.fixacao.interface01;
 
 public class Livro implements Comparavel{
     private String autor;

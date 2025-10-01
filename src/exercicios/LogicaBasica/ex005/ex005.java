@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.LogicaBasica.ex005;
+package exercicios.LogicaBasica.ex005;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

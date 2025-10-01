@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Dconstrutores.dominio;
+package javacore.Dconstrutores.dominio;
 //sobrecarga de métodos
 public class Anime {
     private String nome;

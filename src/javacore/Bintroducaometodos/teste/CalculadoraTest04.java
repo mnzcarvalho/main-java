@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Bintroducaometodos.teste;
+package javacore.Bintroducaometodos.teste;
 
-import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.Calculadora;
+import javacore.Bintroducaometodos.dominio.Calculadora;
 //PASSAGEM DE PARÂMETROS, TIPOS PRIMITIVOS
 //dentro da classe, quando se está passando valores do tipo primitivo para um métod0, a variável original não será alterada...
 //será passada uma cópia

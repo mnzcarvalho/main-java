@@ -1,7 +1,7 @@
-package academy.devdojo.mainjava.javacore.Oexception.exception.test;
+package javacore.Oexception.exception.test;
 
-import academy.devdojo.mainjava.javacore.Oexception.exception.domain.Leitor1;
-import academy.devdojo.mainjava.javacore.Oexception.exception.domain.Leitor2;
+import javacore.Oexception.exception.domain.Leitor1;
+import javacore.Oexception.exception.domain.Leitor2;
 
 import java.io.*;
 

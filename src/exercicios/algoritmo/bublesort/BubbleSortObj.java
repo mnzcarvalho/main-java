@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.algoritmo.bublesort;
+package exercicios.algoritmo.bublesort;
 //Ordenação de Vetor de Objetos
 public class BubbleSortObj {
     public static void main(String[] args) {

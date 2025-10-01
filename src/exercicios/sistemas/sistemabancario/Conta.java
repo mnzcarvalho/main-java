@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.sistemas.sistemabancario;
+package exercicios.sistemas.sistemabancario;
 
 public abstract class Conta {
     protected static int totalContas = 0;

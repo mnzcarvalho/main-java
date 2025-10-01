@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Fmodificadorestatico.dominio;
+package javacore.Fmodificadorestatico.dominio;
 // 0 - Bloco de inicialização é executado qnd a JVM carregar a classe
 // 1 - Primeiro é alocado um espaço em memória para o objeto criado
 // 2 - Cada atributo de classe é criado e inicializado com valores Default ou o que for passado

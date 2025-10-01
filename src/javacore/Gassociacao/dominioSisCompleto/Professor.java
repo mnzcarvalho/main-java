@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.dominioSisCompleto;
+package javacore.Gassociacao.dominioSisCompleto;
 
 public class Professor {
     private String nome;

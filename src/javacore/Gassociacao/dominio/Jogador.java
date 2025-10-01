@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.dominio;
+package javacore.Gassociacao.dominio;
 
 public class Jogador {
     private String nome;

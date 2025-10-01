@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.LogicaBasica.ex002;
+package exercicios.LogicaBasica.ex002;
 //2 - Faça um algoritmo para receber um número qualquer e imprimir na tela se o número é par ou ímpar, positivo ou negativo.
 
 import java.util.Scanner;

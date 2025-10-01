@@ -1,9 +1,9 @@
-package academy.devdojo.mainjava.javacore.Npolimorfismo.test;
+package javacore.Npolimorfismo.test;
 
-import academy.devdojo.mainjava.javacore.Npolimorfismo.domain.Computador;
-import academy.devdojo.mainjava.javacore.Npolimorfismo.domain.Produto;
-import academy.devdojo.mainjava.javacore.Npolimorfismo.domain.Tomate;
-import academy.devdojo.mainjava.javacore.Npolimorfismo.servico.CalculadoraImposto;
+import javacore.Npolimorfismo.domain.Computador;
+import javacore.Npolimorfismo.domain.Produto;
+import javacore.Npolimorfismo.domain.Tomate;
+import javacore.Npolimorfismo.servico.CalculadoraImposto;
 
 public class ProdutoTest03 {
     public static void main(String[] args) {

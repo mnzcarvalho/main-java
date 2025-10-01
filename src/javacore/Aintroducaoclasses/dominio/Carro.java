@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Aintroducaoclasses.dominio;
+package javacore.Aintroducaoclasses.dominio;
 
 public class Carro {
     public int ano;

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.dominioEx;
+package javacore.Gassociacao.dominioEx;
 
 public class Professor {
     private String nome;

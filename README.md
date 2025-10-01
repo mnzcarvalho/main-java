@@ -3,16 +3,16 @@
 Primitive types:
 (1 byte = 8 bits)
 
-![img.png](img.png)
+![img_2.png](img_2.png)
 
-arrays multidimensionais:
+Arrays Multidimensionais:
 
 ![img_3.png](img_3.png)
 
-Conventional commits:
+Conventional Commits:
 
-![img_1.png](img_1.png)
+![img_4.png](img_4.png)
 
-Stack Over Flow
+Exceptions
 
-![img_2.png](img_2.png)
+![img.png](img.png)

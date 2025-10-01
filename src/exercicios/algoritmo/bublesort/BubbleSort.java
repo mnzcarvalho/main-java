@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.algoritmo.bublesort;
+package exercicios.algoritmo.bublesort;
 
 public class BubbleSort {
     public static void main(String[] args) {

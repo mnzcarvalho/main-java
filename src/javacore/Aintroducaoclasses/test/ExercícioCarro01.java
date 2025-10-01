@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Aintroducaoclasses.test;
+package javacore.Aintroducaoclasses.test;
 
-import academy.devdojo.mainjava.javacore.Aintroducaoclasses.dominio.Carro;
+import javacore.Aintroducaoclasses.dominio.Carro;
 
 //criar dois objetos com a classe carro e imprimir seus valores
 public class ExercícioCarro01 {

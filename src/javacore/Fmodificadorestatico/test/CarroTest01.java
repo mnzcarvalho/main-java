@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Fmodificadorestatico.test;
+package javacore.Fmodificadorestatico.test;
 // Modificador de acesso static
-import academy.devdojo.mainjava.javacore.Fmodificadorestatico.dominio.Carro;
+import javacore.Fmodificadorestatico.dominio.Carro;
 
 public class CarroTest01 {
     public static void main(String[] args) {

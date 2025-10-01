@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 
 // Dado o valor de um carro, descubra em quantas vezes ele pode ser parcelado.
 // A condição é que o valor da parcela tem que ser >= 1000.

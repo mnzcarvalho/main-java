@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 
 //Imprimir o dia da semana
 public class Aula05EstruturasCondicionais05 {

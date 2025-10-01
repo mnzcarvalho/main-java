@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Gassociacao.dominio;
+package javacore.Gassociacao.dominio;
 
 public class Escola {
     private String nome;

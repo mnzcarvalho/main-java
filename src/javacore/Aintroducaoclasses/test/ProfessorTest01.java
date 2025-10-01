@@ -1,7 +1,7 @@
-package academy.devdojo.mainjava.javacore.Aintroducaoclasses.test;
+package javacore.Aintroducaoclasses.test;
 //coesão
 
-import academy.devdojo.mainjava.javacore.Aintroducaoclasses.dominio.Professor;
+import javacore.Aintroducaoclasses.dominio.Professor;
 
 public class ProfessorTest01 {
     public static void main(String[] args) {

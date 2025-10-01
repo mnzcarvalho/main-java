@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 //valor de inicialização de cada tipo de variável
 //byte, shor, float, double, int e long = 0
 //char = '\u0000' (espaço em branco)

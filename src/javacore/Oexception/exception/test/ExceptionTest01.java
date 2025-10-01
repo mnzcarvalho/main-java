@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Oexception.exception.test;
+package javacore.Oexception.exception.test;
 
 import java.io.File;
 import java.io.IOException;

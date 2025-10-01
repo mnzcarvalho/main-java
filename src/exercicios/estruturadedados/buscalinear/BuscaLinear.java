@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.estruturadedados.buscalinear;
+package exercicios.estruturadedados.buscalinear;
 
 import java.util.Scanner;
 

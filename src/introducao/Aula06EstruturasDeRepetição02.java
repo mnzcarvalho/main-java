@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 
 //imprima todos os pares até 1,000,000.
 public class Aula06EstruturasDeRepetição02 {

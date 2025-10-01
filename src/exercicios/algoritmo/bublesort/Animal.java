@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.exercicios.algoritmo.bublesort;
+package exercicios.algoritmo.bublesort;
 
 public class Animal {
     private String especie;

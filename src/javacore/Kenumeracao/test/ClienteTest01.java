@@ -1,8 +1,8 @@
-package academy.devdojo.mainjava.javacore.Kenumeracao.test;
+package javacore.Kenumeracao.test;
 
-import academy.devdojo.mainjava.javacore.Kenumeracao.domain.Cliente;
-import academy.devdojo.mainjava.javacore.Kenumeracao.domain.TipoCliente;
-import academy.devdojo.mainjava.javacore.Kenumeracao.domain.TipoPagamento;
+import javacore.Kenumeracao.domain.Cliente;
+import javacore.Kenumeracao.domain.TipoCliente;
+import javacore.Kenumeracao.domain.TipoPagamento;
 
 public class ClienteTest01 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Jmodificadorfinal.domain;
+package javacore.Jmodificadorfinal.domain;
 
 //Constantes no java tem uma convenção própria: em UPPER CASE e separado por _ qnd preciso
 //pode ser inicializada dando o valor diretamente, nos blocos de inicialização, ou no construtor.

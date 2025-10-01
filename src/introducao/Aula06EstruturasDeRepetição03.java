@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 
 //break
 public class Aula06EstruturasDeRepetição03 {

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 // operador ternário
 public class Aula05EstruturasCondicionais03 {
     public static void main(String[] args) {

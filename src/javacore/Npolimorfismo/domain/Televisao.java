@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Npolimorfismo.domain;
+package javacore.Npolimorfismo.domain;
 
 public class Televisao extends Produto{
     public static final double IMPOSTO_POR_CENTO = 0.21;

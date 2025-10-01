@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.introducao;
+package introducao;
 /*
 Eu <nome>, morando no endereço <endereço>,
 confirmo que recebi o salário de <salarios>, na data: <data>

@@ -1,6 +1,6 @@
-package academy.devdojo.mainjava.javacore.Bintroducaometodos.teste;
+package javacore.Bintroducaometodos.teste;
 
-import academy.devdojo.mainjava.javacore.Bintroducaometodos.dominio.Estudante;
+import javacore.Bintroducaometodos.dominio.Estudante;
 
 //Referência THIS
 public class EstudanteTest02 {

@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Hheranca.domain;
+package javacore.Hheranca.domain;
 
 
 //protected = dá acesso a todos os atributos para todas as subclasses de Pessoa && para todas as classes do mesmo pacote

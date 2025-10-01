@@ -1,4 +1,4 @@
-package academy.devdojo.mainjava.javacore.Kenumeracao.domain;
+package javacore.Kenumeracao.domain;
 
 //padrão de projeto strategy
 public enum TipoPagamento{
