@@ -6,12 +6,14 @@ public class Livro {
     private String isbn;
     private int ano;
     private boolean isDisponivel = true;
+    private Categoria categoria;
 
-    public Livro(String titulo, String autor, String isbn, int ano) {
+    public Livro(String titulo, String autor, String isbn, int ano, Categoria categoria) {
         this.titulo = titulo;
         this.autor = autor;
         this.isbn = isbn;
         this.ano = ano;
+        this.categoria = categoria;
     }
 
     public void emprestar() throws Exception {
@@ -19,6 +21,10 @@ public class Livro {
             throw new Exception("Livro indisponível para emprestimo: " + this.titulo);
         }
         isDisponivel = false;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
     }
 
     public void devolver(){
@@ -43,11 +49,12 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Livro{" +
-                "titulo='" + this.titulo + '\'' +
-                ", autor='" + this.autor + '\'' +
-                ", ano=" + this.ano +
-                ", Disponivel=" + this.isDisponivel +
+        return "Livro:" +
+                " " + this.titulo + '\'' +
+                ", autor: '" + this.autor + '\'' +
+                ", ano: " + this.ano +
+                ", Categoria: " + this.categoria +
+                ", Disponivel: " + this.isDisponivel +
                 '}';
     }
 }
