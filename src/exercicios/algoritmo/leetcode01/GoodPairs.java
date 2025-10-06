@@ -1,4 +1,4 @@
-package exercicios.algoritmo.leet1;
+package exercicios.algoritmo.leetcode01;
 
 //Given a array of integer 'nums', return the number of good pairs
 //a pair (i, j) is called good if nums[i] == nums[j] and i < j
