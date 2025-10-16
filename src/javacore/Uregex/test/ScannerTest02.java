@@ -18,6 +18,5 @@ public class ScannerTest02 {
                 System.out.println(scanner.next());
             }
         }
-
     }
 }
