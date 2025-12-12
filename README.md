@@ -1,18 +1,22 @@
 ## Hello, Git!
 
-Primitive types:
-(1 byte = 8 bits)
+### Primitive types:
+### (1 byte = 8 bits)
 
 ![img_2.png](img_2.png)
 
-Arrays Multidimensionais:
+### Arrays Multidimensionais:
 
 ![img_3.png](img_3.png)
 
-Conventional Commits:
+### Conventional Commits:
 
 ![img_4.png](img_4.png)
 
-Exceptions
+### Exceptions
 
 ![img.png](img.png)
+
+### Java Files and I/O:
+
+![img_5.png](img_5.png)

@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder/arquivo_renomeado.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder/subpasta/subsubpasta/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder/subpasta/subsubpasta/file_renamed.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder_renamed/arquivo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder_renamed/arquivo_renomeado.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +45,9 @@
     "Application.NomalizeTest01.executor": "Run",
     "Application.PathTest01.executor": "Run",
     "Application.PathTest02.executor": "Run",
+    "Application.SerializacaoTest01.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -51,7 +59,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.NomalizeTest01">
+  <component name="RunManager" selected="Application.SerializacaoTest01">
     <configuration name="NomalizeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacore.Wnio.test.NomalizeTest01" />
       <module name="main-java" />
@@ -91,8 +99,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SerializacaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Xserializacao.test.SerializacaoTest01" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacore.Xserializacao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SerializacaoTest01" />
         <item itemvalue="Application.NomalizeTest01" />
         <item itemvalue="Application.PathTest02" />
         <item itemvalue="Application.PathTest01" />
