@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder/arquivo_renomeado.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder/subpasta/subsubpasta/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder/subpasta/subsubpasta/file_renamed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder_renamed/arquivo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder_renamed/arquivo_renomeado.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder/aluno.ser" beforeDir="false" afterPath="$PROJECT_DIR$/folder/aluno.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/test/SerializacaoTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Xserializacao/test/SerializacaoTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mnz/CODE/JAVA/main-java",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
