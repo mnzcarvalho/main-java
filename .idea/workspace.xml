@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder/aluno.ser" beforeDir="false" afterPath="$PROJECT_DIR$/folder/aluno.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main-java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/test/SerializacaoTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Xserializacao/test/SerializacaoTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +39,7 @@
     "Application.NomalizeTest01.executor": "Run",
     "Application.PathTest01.executor": "Run",
     "Application.PathTest02.executor": "Run",
+    "Application.PathTest03.executor": "Run",
     "Application.SerializacaoTest01.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -57,7 +54,12 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SerializacaoTest01">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mnz\CODE\JAVA\main-java\home\mnz\dev" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PathTest03">
     <configuration name="NomalizeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacore.Wnio.test.NomalizeTest01" />
       <module name="main-java" />
@@ -97,6 +99,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PathTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Wnio.test.PathTest03" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacore.Wnio.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SerializacaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacore.Xserializacao.test.SerializacaoTest01" />
       <module name="main-java" />
@@ -112,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PathTest03" />
         <item itemvalue="Application.SerializacaoTest01" />
         <item itemvalue="Application.NomalizeTest01" />
         <item itemvalue="Application.PathTest02" />
