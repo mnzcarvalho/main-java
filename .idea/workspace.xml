@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,76 +35,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BasicFileAttributesTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BasicFileAttributesTest02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NomalizeTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PathTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PathTest02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PathTest03.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RelativizeTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ResolveTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SerializacaoTest01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mnz/CODE/JAVA/main-java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BasicFileAttributesTest01.executor": "Run",
+    "Application.BasicFileAttributesTest02.executor": "Run",
+    "Application.NomalizeTest01.executor": "Run",
+    "Application.PathTest01.executor": "Run",
+    "Application.PathTest02.executor": "Run",
+    "Application.PathTest03.executor": "Run",
+    "Application.RelativizeTest01.executor": "Run",
+    "Application.ResolveTest01.executor": "Run",
+    "Application.SerializacaoTest01.executor": "Run",
+    "Application.TestMain.executor": "Run",
+    "Application.Teste01.executor": "Run",
+    "Application.Teste02.executor": "Run",
+    "Application.Teste03.executor": "Run",
+    "Application.Teste04.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mnz/CODE/JAVA/main-java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mnz\CODE\JAVA\main-java\home\mnz\dev" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Teste01">
-    <configuration name="RelativizeTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Wnio.test.RelativizeTest01" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacore.Wnio.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResolveTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Wnio.test.ResolveTest01" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacore.Wnio.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SerializacaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Xserializacao.test.SerializacaoTest01" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacore.Xserializacao.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Teste04">
     <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicios.review.a.test.TestMain" />
       <module name="main-java" />
@@ -131,13 +96,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Teste02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.review.b.test.Teste02" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.review.b.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teste03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.review.b.test.Teste03" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.review.b.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teste04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.review.b.test.Teste04" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.review.b.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Teste04" />
+        <item itemvalue="Application.Teste03" />
+        <item itemvalue="Application.Teste02" />
         <item itemvalue="Application.Teste01" />
         <item itemvalue="Application.TestMain" />
-        <item itemvalue="Application.SerializacaoTest01" />
-        <item itemvalue="Application.ResolveTest01" />
-        <item itemvalue="Application.RelativizeTest01" />
       </list>
     </recent_temporary>
   </component>
