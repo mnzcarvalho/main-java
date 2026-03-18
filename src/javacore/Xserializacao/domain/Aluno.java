@@ -1,43 +1,16 @@
 package javacore.Xserializacao.domain;
 
-import java.io.*;
+import java.io.Serializable;
 
-//Serializable é uma interface "FLAG", que só serve para vc testar se passa "naquele teste"
 public class Aluno implements Serializable {
-    @Serial
-    private static final long serialVersionUID = 3190503585786412922L; //serializable class withouth (ctrl + shift + a)
-    private long id;
+    private Long id;
     private String nome;
-    private transient String password; // não será serializado
-    private static final String NOME_CURSO = "DevDojo Vraau"; //Atributos static pertencem a classe e não ao objeto, não será serializado
-    private transient Turma turma;
+    private String password;
 
-    public Aluno(long id, String nome, String password) {
-        System.out.println("Dentro do construtor");
+    public Aluno(Long id, String nome, String password) {
         this.id = id;
         this.nome = nome;
         this.password = password;
-    }
-
-    @Serial
-    private void writeObject(ObjectOutputStream oos) {
-        try {
-            oos.defaultWriteObject();
-            oos.writeUTF(turma.getNome());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Serial
-    private void readObject(ObjectInputStream ois) {
-        try {
-            ois.defaultReadObject();
-            String nomeTruma = ois.readUTF();
-            turma = new Turma(nomeTruma);
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
     }
 
     @Override
@@ -46,24 +19,14 @@ public class Aluno implements Serializable {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", password='" + password + '\'' +
-                ", NOME_CURSO='" + NOME_CURSO + '\'' +
-                ", Turma='" + turma + '\'' +
                 '}';
     }
 
-    public Turma getTurma() {
-        return turma;
-    }
-
-    public void setTurma(Turma turma) {
-        this.turma = turma;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
