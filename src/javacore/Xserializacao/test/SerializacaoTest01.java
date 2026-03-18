@@ -1,6 +1,7 @@
 package javacore.Xserializacao.test;
 
 import javacore.Xserializacao.domain.Aluno;
+import javacore.Xserializacao.domain.Turma;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -11,14 +12,18 @@ import java.nio.file.Paths;
 
 //Ao serializar, transforma o objeto em um array de bits.
 //Tem que informar ao java que o objeto é serializável - "implements Serializable" na classe.
-//Interface flag = interface que não contém métodos.
+//Interface flag = interface que não contém métodos(Serve para marcar uma classe com uma propriedade especial).
 //Ao deserializar, o java não lê o construtor. Ao trabalhar com herança a subclasse não chamar a "superClasse".
 public class SerializacaoTest01 {
     public static void main(String[] args) {
         Aluno aluno = new Aluno(1L, "Eduardo", "123");
-//        serializar(aluno);
+        Turma turma = new Turma("Dojo10");
+        aluno.setTurma(turma);
+
+        serializar(aluno);
         deserializar();
     }
+
 
     private static void serializar(Aluno aluno) {
         Path path = Paths.get("folder/aluno.serializado");

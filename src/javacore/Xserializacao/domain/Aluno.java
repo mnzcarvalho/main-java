@@ -1,16 +1,45 @@
 package javacore.Xserializacao.domain;
 
-import java.io.Serializable;
+import java.io.*;
 
+//Atributos estáticos não pertence ao objeto, pertence a classe. Não é serializado.
+/*  Para serializar um objeto que não pode ser serializado, tem que escrever os atributos do objeto através de métodos
+EX: "whiteObject" e "readObject"  */
 public class Aluno implements Serializable {
+    @Serial
+    private static final long serialVersionUID = -5075191876870688346L;
     private Long id;
     private String nome;
-    private String password;
+    private transient String password; // transient = será ignorado na serialização
+    private static final String NOME_ESCOLA = "devDojo";
+    private transient Turma turma;
 
     public Aluno(Long id, String nome, String password) {
+        System.out.println("Dentro do construtor");
         this.id = id;
         this.nome = nome;
         this.password = password;
+    }
+
+    @Serial
+    private void writeObject(ObjectOutputStream oos) {
+        try {
+            oos.defaultWriteObject();
+            oos.writeUTF(turma.getNome());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Serial
+    private void readObject(ObjectInputStream ois) {
+        try {
+            ois.defaultReadObject();
+            String nomeTurma = ois.readUTF();
+            turma = new Turma(nomeTurma);
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -19,7 +48,17 @@ public class Aluno implements Serializable {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", password='" + password + '\'' +
+                ", NOME_ESCOLA='" + NOME_ESCOLA + '\'' +
+                ", turma='" + turma + '\'' +
                 '}';
+    }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 
     public Long getId() {

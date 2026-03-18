@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder/aluno.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Aluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Turma.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/test/SerializacaoTest01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder/aluno.serializado" beforeDir="false" afterPath="$PROJECT_DIR$/folder/aluno.serializado" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Xserializacao/domain/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Xserializacao/test/SerializacaoTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Xserializacao/test/SerializacaoTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
