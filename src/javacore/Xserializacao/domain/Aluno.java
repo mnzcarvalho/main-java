@@ -21,6 +21,7 @@ public class Aluno implements Serializable {
         this.password = password;
     }
 
+
     @Serial
     private void writeObject(ObjectOutputStream oos) {
         try {
@@ -30,6 +31,7 @@ public class Aluno implements Serializable {
             e.printStackTrace();
         }
     }
+
 
     @Serial
     private void readObject(ObjectInputStream ois) {
