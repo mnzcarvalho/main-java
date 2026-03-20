@@ -2,7 +2,7 @@ package javacore.Ycolecoes.test;
 
 import javacore.Ycolecoes.domain.Smartphone;
 
-//O valor da referencia que está sendo comparado
+// O valor da referencia que está sendo comparado
 // O equals compara o valor da String. E tbm tem o equals Object que compara objetos.
 // equals object compara o valor em memória, então variáveis de referências diferentes irão dar "false"
 public class EqualsTest01 {
