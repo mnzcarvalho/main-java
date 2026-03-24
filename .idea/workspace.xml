@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Ycolecoes/domain/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Ycolecoes/domain/Smartphone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,7 @@
     "Application.BasicFileAttributesTest01.executor": "Run",
     "Application.BasicFileAttributesTest02.executor": "Run",
     "Application.EqualsTest01.executor": "Run",
+    "Application.ListSortTest01.executor": "Run",
     "Application.ListTest01.executor": "Run",
     "Application.NomalizeTest01.executor": "Run",
     "Application.PathTest01.executor": "Run",
@@ -76,9 +76,22 @@
       <recent name="C:\Users\mnz\CODE\JAVA\main-java\home\mnz\dev" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SmarthphoneListTest01">
+  <component name="RunManager" selected="Application.ListSortTest01">
     <configuration name="EqualsTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.EqualsTest01" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListSortTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.ListSortTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
@@ -129,26 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.review.c.test.Test02" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercicios.review.c.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListSortTest01" />
         <item itemvalue="Application.SmarthphoneListTest01" />
         <item itemvalue="Application.ListTest01" />
         <item itemvalue="Application.EqualsTest01" />
         <item itemvalue="Application.SerializacaoTest01" />
-        <item itemvalue="Application.Test02" />
       </list>
     </recent_temporary>
   </component>
