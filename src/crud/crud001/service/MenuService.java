@@ -4,8 +4,13 @@ import java.util.Scanner;
 
 //exibição e captura das opções
 public class MenuService {
+    private PetService petService;
     private Scanner entrada = new Scanner(System.in);
     private int opcao;
+
+    public MenuService(PetService petService) {
+        this.petService = petService;
+    }
 
     private int lerOpcaoValida() {
         while (true) {
@@ -43,6 +48,7 @@ public class MenuService {
 
             switch (opcao) {
                 case 1:
+                    petService.cadastrarPet();
                     break;
 
                 case 2:

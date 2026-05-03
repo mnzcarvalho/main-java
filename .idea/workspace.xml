@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crud/crud001/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/crud001/model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crud/crud001/service/ArquivoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/crud001/service/ArquivoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crud/crud001/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/crud001/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crud/crud001/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/crud001/service/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crud/crud001/service/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/crud001/service/PetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crud/crud001/util/Validador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crud/crud001/util/Validador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,7 @@
       <workItem from="1777563725736" duration="2128000" />
       <workItem from="1777572406162" duration="2698000" />
       <workItem from="1777734105914" duration="599000" />
-      <workItem from="1777813271405" duration="13692000" />
+      <workItem from="1777813271405" duration="17844000" />
     </task>
     <servers />
   </component>

@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Validador {
     // Regex que aceita apenas letras (incluindo acentos) e espaços para nomes compostos
-    private static final Pattern PATTERN_APENAS_LETRAS = Pattern.compile("^[\\\\p{L}\\\\s]+$");
+    private static final Pattern PATTERN_APENAS_LETRAS = Pattern.compile("^[\\p{L}\\s]+$");
 
     // Valida nome: obrigatório, não vazio, apenas letras/espaços
     public static boolean isNomeValido(String nome){
@@ -17,7 +17,7 @@ public class Validador {
 
     // Valida raça: opcional (vazio é válido, usará NAO_INFORMADO), apenas letras se preenchido
     public static boolean isRacaValida(String raca){
-        if (raca == null || raca.trim().isEmpty()) return false;
+        if (raca == null || raca.trim().isEmpty()) return true;
         return PATTERN_APENAS_LETRAS.matcher(raca.trim()).matches();
     }
 
