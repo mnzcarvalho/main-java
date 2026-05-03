@@ -13,5 +13,4 @@ public class ArquivoService {
       return Files.readAllLines(Paths.get(caminhoArquivo));
    }
 
-
 }
