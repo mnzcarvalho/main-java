@@ -3,6 +3,7 @@ package crud.crud001.app;
 import crud.crud001.service.ArquivoService;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -14,10 +15,8 @@ public class Main {
             for (String pergunta : perguntas) {
                 System.out.println(pergunta);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

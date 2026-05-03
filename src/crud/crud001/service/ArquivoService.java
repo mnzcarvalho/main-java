@@ -12,4 +12,6 @@ public class ArquivoService {
    public List<String> leitorArquivo (String caminhoArquivo) throws IOException {
       return Files.readAllLines(Paths.get(caminhoArquivo));
    }
+
+
 }
