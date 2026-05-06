@@ -1,75 +1,84 @@
 package crud.crud001.service;
 
+import crud.crud001.enums.TipoAnimal;
+import crud.crud001.model.Pet;
+
+import java.util.Map;
 import java.util.Scanner;
 
-//exibição e captura das opções
 public class MenuService {
     private PetService petService;
-    private Scanner entrada = new Scanner(System.in);
-    private int opcao;
+    private Scanner sc;
 
     public MenuService(PetService petService) {
         this.petService = petService;
-    }
-
-    private int lerOpcaoValida() {
-        while (true) {
-            System.out.println("Digite um opção válida: ");
-            if (entrada.hasNextInt()) {
-                int op = entrada.nextInt();
-                if (op >= 1 && op <= 6) {
-                    entrada.hasNextLine();
-                    return op;
-                } else {
-                    System.out.println("Opção inválida! Escolha um número de 1 a 6.");
-                }
-            } else {
-                System.out.println("Entrada inválida, digite apenas números.");
-                entrada.next();
-            }
-            entrada.nextLine();
-        }
+        this.sc = new Scanner(System.in);
     }
 
     public void exibir() {
+        int opcao = -1;
+        while (opcao != 6) {
+            System.out.println("\n=== MENU ===");
+            System.out.println("1 - Cadastrar Pet");
+            System.out.println("2 - Alterar Pet");
+            System.out.println("3 - Deletar Pet");
+            System.out.println("4 - Listar todos os Pets");
+            System.out.println("5 - Buscar Pet");
+            System.out.println("6 - Sair");
+            System.out.print("Opção: ");
 
-        do {
-            System.out.println("===Sistema de Cadastro de Pets===");
-            System.out.println("1- Cadastrar um novo pet");
-            System.out.println("2- Alterar os dados do pet cadastrado");
-            System.out.println("3- Deletar um pet cadastrado");
-            System.out.println("4- Listar todos os pets cadastrados");
-            System.out.println("5- Listar pets por algum critério (idade, nome, raça)");
-            System.out.println("6- Sair");
-            opcao = entrada.nextInt();
-            entrada.nextLine();
-
-            opcao = lerOpcaoValida();
+            try {
+                opcao = Integer.parseInt(sc.nextLine().trim());
+            } catch (NumberFormatException e) {
+                System.out.println("Erro: digite apenas números de 1 a 6.");
+                continue;
+            }
 
             switch (opcao) {
-                case 1:
-                    petService.cadastrarPet();
-                    break;
-
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                case 4:
-
-                    break;
-                case 5:
-
-                    break;
-                case 6:
-                    entrada.close();
-                    break;
-                default:
-                    System.out.println("Opção inválida, tente novamente");
+                case 1: petService.cadastrar(sc); break;
+                case 2: petService.alterar(sc); break;
+                case 3: petService.deletar(sc); break;
+                case 4: petService.listarTodos(); break;
+                case 5: buscar(sc); break;
+                case 6: System.out.println("Saindo..."); break;
+                default: System.out.println("Erro: opção inválida. Digite 1 a 6.");
             }
         }
-        while (opcao != 6);
+        sc.close();
+    }
+
+    private void buscar(Scanner sc) {
+        try {
+            System.out.print("Tipo (CACHORRO/GATO): ");
+            TipoAnimal tipo;
+            try {
+                tipo = TipoAnimal.valueOf(sc.nextLine().trim().toUpperCase());
+            } catch (IllegalArgumentException e) {
+                System.out.println("Tipo inválido.");
+                return;
+            }
+
+            Map<String, String> criterios = new java.util.HashMap<>();
+            System.out.print("Quantos critérios adicionais (0-2)? ");
+            int qtd;
+            try {
+                qtd = Integer.parseInt(sc.nextLine().trim());
+            } catch (NumberFormatException e) { qtd = 0; }
+
+            for (int i = 0; i < Math.min(qtd, 2); i++) {
+                System.out.print("Critério (nome/sexo/idade/peso/raca/endereco): ");
+                String chave = sc.nextLine().trim().toLowerCase();
+                System.out.print("Valor: ");
+                String valor = sc.nextLine().trim();
+                criterios.put(chave, valor);
+            }
+
+            PetSearch search = new PetSearchService();
+            java.util.List<Pet> resultados = search.buscar(tipo, criterios);
+            System.out.println(search.formatarResultados(resultados));
+
+        } catch (Exception e) {
+            System.out.println("Erro na busca: " + e.getMessage());
+        }
     }
 }

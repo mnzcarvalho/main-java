@@ -1,252 +1,224 @@
 package crud.crud001.service;
 
-import crud.crud001.enums.Sexo;
-import crud.crud001.enums.TipoAnimal;
 import crud.crud001.model.Endereco;
 import crud.crud001.model.Pet;
+import crud.crud001.enums.Sexo;
+import crud.crud001.enums.TipoAnimal;
 import crud.crud001.util.Constantes;
 import crud.crud001.util.Validador;
 
 import java.io.IOException;
-import java.text.Normalizer;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
-//Toda a lógica de CRUD e busca
-
 public class PetService {
+    private final PetRepository repository;
+    private final PetSearch search;
 
-    // Lista em memória para armazenar pets cadastrados
-    private List<Pet> pets = new ArrayList<>();
-    private ArquivoService arquivoService = new ArquivoService();
-    private Scanner entrada = new Scanner(System.in);
+    public PetService(PetRepository repository, PetSearch search) {
+        this.repository = repository;
+        this.search = search;
+    }
 
-
-    public void cadastrarPet() {
+    // Cadastra novo pet: lê perguntas do formulário, coleta respostas via Scanner,
+    // valida campos, cria objeto Pet, salva via repository.
+    public void cadastrar(Scanner sc) {
         try {
-            List<String> perguntas = arquivoService.leitorArquivo("C:\\Users\\mnz\\CODE\\JAVA\\main-java\\src\\crud\\crud001\\formulario.txt");
-            if (perguntas.size() != 7) {
-                System.out.println("Erro: formulario.txt deve ter 7 perguntas.");
+            List<String> perguntas = Files.readAllLines(Paths.get(Constantes.FORMULARIO_PATH));
+            String rua = "", numero = Constantes.NAO_INFORMADO, bairro = "", cidade = "";
+
+            System.out.println(perguntas.get(0));
+            String nome = sc.nextLine().trim();
+            if (!Validador.validarNomeSobrenome(nome)) {
+                System.out.println("Erro: nome/sobrenome inválido.");
                 return;
             }
 
-            // Coleta e valida cada campo, usando as perguntas lidas do arquivo
-            String nome = coletarValidarNome(perguntas.get(0));
-            TipoAnimal tipo = coletarValidarTipo(perguntas.get(1));
-            Sexo sexo = coletarValidarSexo(perguntas.get(2));
-            Endereco endereco = coletarValidarEndereco(perguntas.get(3));
-            double idade = coletarValidarIdade(perguntas.get(4));
-            double peso = coletarValidarPeso(perguntas.get(5));
-            String raca = coletarValidarRaca(perguntas.get(6));
+            System.out.println(perguntas.get(1));
+            TipoAnimal tipo;
+            try { tipo = TipoAnimal.valueOf(sc.nextLine().trim().toUpperCase()); }
+            catch (IllegalArgumentException e) { System.out.println("Erro: tipo inválido."); return; }
 
-            // Monta o objeto Pet
-            Pet pet = new Pet();
-            pet.setNome(nome);
-            pet.setTipo(tipo);
-            pet.setSexo(sexo);
-            pet.setEndereco(endereco);
-            pet.setIdade(idade);
-            pet.setPeso(peso);
-            pet.setRaca(raca);
+            System.out.println(perguntas.get(2));
+            Sexo sexo;
+            try { sexo = Sexo.valueOf(sc.nextLine().trim().toUpperCase()); }
+            catch (IllegalArgumentException e) { System.out.println("Erro: sexo inválido."); return; }
 
-            // Adiciona à lista em memória
-            pets.add(pet);
-            System.out.println("Pet cadastrado com sucesso!");
+            System.out.println(perguntas.get(3));
+            String[] endParts = sc.nextLine().split(",");
+            if (endParts.length > 0) rua = endParts[0].trim();
+            if (endParts.length > 1) numero = endParts[1].trim();
+            if (endParts.length > 2) bairro = endParts[2].trim();
+            if (endParts.length > 3) cidade = endParts[3].trim();
 
+            System.out.println(perguntas.get(4));
+            double idade;
+            try { idade = Double.parseDouble(sc.nextLine().replace(",",".").trim()); }
+            catch (NumberFormatException e) { System.out.println("Erro: idade inválida."); return; }
+            if (idade > 20) { System.out.println("Erro: idade > 20."); return; }
+            if (idade < 0) { System.out.println("Erro: idade inválida."); return; }
+
+            System.out.println(perguntas.get(5));
+            double peso;
+            try { peso = Double.parseDouble(sc.nextLine().replace(",",".").trim()); }
+            catch (NumberFormatException e) { System.out.println("Erro: peso inválido."); return; }
+            if (peso < 0.5 || peso > 60) { System.out.println("Erro: peso inválido."); return; }
+
+            System.out.println(perguntas.get(6));
+            String raca = sc.nextLine().trim();
+            if (!raca.isEmpty() && !raca.matches("\\p{L}+")) {
+                System.out.println("Erro: raça inválida.");
+                return;
+            }
+
+            Endereco endereco = new Endereco(rua, bairro, cidade);
+            endereco.setNumero(numero);
+
+            Pet pet = new Pet(nome, tipo, sexo, endereco, idade, peso, raca);
+            repository.salvarPet(pet);
+            System.out.println("Pet cadastrado com sucesso.");
 
         } catch (IOException e) {
-            System.out.println("Erro ao ler formulário.txt: " + e.getMessage());
-        } catch (IllegalArgumentException e) {
-            System.out.println("Erro no cadastro: " + e.getMessage());
+            System.out.println("Erro de I/O: " + e.getMessage());
         }
     }
 
-    // Validação de nome (Q1: obrigatório, apenas letras)
-    private String coletarValidarNome(String pergunta) {
-        while (true) {
-            System.out.println(pergunta);
-            String resposta = entrada.nextLine().trim();
-            if (Validador.isNomeValido(resposta)) return resposta;
-            System.out.println("Nome inválido! Apenas letras e espaços, não pode ser vazio.");
+    // Lista todos os pets cadastrados usando repository.listarTodos(),
+    // formata com search.formatarResultados().
+    public void listarTodos() {
+        try {
+            List<Pet> pets = repository.listarTodos();
+            System.out.println(search.formatarResultados(pets));
+        } catch (Exception e) {
+            System.out.println("Erro ao listar: " + e.getMessage());
         }
     }
 
-    // Validação de tipo (Q2: converte para enum TipoAnimal)
-    private TipoAnimal coletarValidarTipo(String pergunta) {
-        while (true) {
-            System.out.println(pergunta);
-            String resposta = entrada.nextLine().trim();
-            try {
-                return Validador.parseTipoAnimal(resposta);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+    // Altera pet existente: lista pets, usuário seleciona índice,
+    // permite alterar campos (vazio = manter), salva sobrepondo arquivo.
+    // Tipo e Sexo não podem ser alterados (Passo 6 do guide).
+    public void alterar(Scanner sc) {
+        try {
+            List<Pet> pets = repository.listarTodos();
+            if (pets.isEmpty()) { System.out.println("Nenhum pet cadastrado."); return; }
+
+            System.out.println("=== Pets cadastrados ===");
+            for (int i = 0; i < pets.size(); i++) {
+                System.out.println((i+1) + ". " + pets.get(i).getNome() + " (" + pets.get(i).getTipo() + ")");
             }
-        }
-    }
+            System.out.print("Selecione o índice: ");
+            int idx;
+            try { idx = Integer.parseInt(sc.nextLine().trim()) - 1; }
+            catch (NumberFormatException e) { System.out.println("Índice inválido."); return; }
+            if (idx < 0 || idx >= pets.size()) { System.out.println("Índice inválido."); return; }
 
-    // Validação de sexo (Q3: converte para enum Sexo)
-    private Sexo coletarValidarSexo(String pergunta) {
-        while (true) {
-            System.out.println(pergunta);
-            String resposta = entrada.nextLine().trim();
-            try {
-                return Validador.parseSexo(resposta);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+            Pet pet = pets.get(idx);
+
+            System.out.println("Pressione ENTER para manter o valor atual.");
+            System.out.println("Nome atual: " + pet.getNome());
+            System.out.print("Novo nome: ");
+            String novoNome = sc.nextLine().trim();
+            if (!novoNome.isEmpty()) {
+                if (Validador.validarNomeSobrenome(novoNome)) pet.setNome(novoNome);
+                else { System.out.println("Nome inválido. Mantido original."); }
             }
-        }
-    }
 
-    // Validação de endereço (Q4: mapeia para os 4 campos de Endereco)
-    private Endereco coletarValidarEndereco(String pergunta) {
-        System.out.println(pergunta);
-        System.out.println("Informe os dados separadamente:");
+            System.out.println("Tipo não altera: " + pet.getTipo());
+            System.out.println("Sexo não altera: " + pet.getSexo());
 
-        String rua, bairro, cidade, numero;
-
-        //Rua, obrigatório
-        while (true) {
-            System.out.println("Rua: ");
-            rua = entrada.nextLine().trim();
-            if (Validador.isCampoEnderecoValido(rua, true)) break;
-            System.out.println("Rua é obrigatória!");
-        }
-
-        // Número (opcional, usa NAO_INFORMADO se vazio)
-        System.out.println("Número: ");
-        numero = entrada.nextLine().trim();
-        if (numero.isEmpty()) numero = Constantes.NAO_INFORMADO;
-
-        // Bairro (obrigatório)
-        while (true) {
-            System.out.println("Bairro: ");
-            bairro = entrada.nextLine().trim();
-            if (Validador.isCampoEnderecoValido(bairro, true)) break;
-            System.out.println("Bairro é obrigatório!");
-        }
-
-        // Cidade (obrigatório)
-        while (true) {
-            System.out.println("Cidade: ");
-            cidade = entrada.nextLine().trim();
-            if (Validador.isCampoEnderecoValido(cidade, true)) break;
-            System.out.println("Cudade é obrigatório!");
-        }
-
-
-        Endereco endereco = new Endereco(rua, bairro, cidade);
-        endereco.setNumero(numero);
-        return endereco;
-    }
-
-    // Validação de idade (Q5: aceita vírgula, range 0-20)
-    private double coletarValidarIdade(String pergunta) {
-        while (true) {
-            System.out.println(pergunta);
-            String resposta = entrada.nextLine().trim();
-            try {
-                return Validador.validarIdade(resposta);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+            Endereco end = pet.getEndereco();
+            System.out.println("Endereço atual: " + end.getRua() + ", " + end.getNumero() + ", " + end.getBairro() + ", " + end.getCidade());
+            System.out.print("Novo endereço (rua,numero,bairro,cidade) ou vazio: ");
+            String novoEnd = sc.nextLine().trim();
+            if (!novoEnd.isEmpty()) {
+                String[] parts = novoEnd.split(",");
+                if (parts.length >= 1) end.setRua(parts[0].trim());
+                if (parts.length >= 2) end.setNumero(parts[1].trim());
+                if (parts.length >= 3) end.setBairro(parts[2].trim());
+                if (parts.length >= 4) end.setCidade(parts[3].trim());
             }
-        }
-    }
 
-    // Validação de peso (Q6: range 0.5-60)
-    private double coletarValidarPeso(String pergunta) {
-        while (true) {
-            System.out.println(pergunta);
-            String resposta = entrada.nextLine().trim();
-            try {
-                return Validador.validarPeso(resposta);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+            System.out.println("Idade atual: " + pet.getIdade());
+            System.out.print("Nova idade: ");
+            String sIdade = sc.nextLine().trim();
+            if (!sIdade.isEmpty()) {
+                try {
+                    double idade = Double.parseDouble(sIdade.replace(",","."));
+                    if (Validador.validarIdade(idade)) pet.setIdade(idade);
+                    else System.out.println("Idade inválida. Mantida original.");
+                } catch (NumberFormatException e) { System.out.println("Idade inválida. Mantida original."); }
             }
-        }
-    }
 
-    // Validação de raça (Q7: opcional, apenas letras)
-    private String coletarValidarRaca(String pergunta) {
-        while (true) {
-            System.out.println(pergunta);
-            String resposta = entrada.nextLine().trim();
-            if (Validador.isRacaValida(resposta)) {
-                return resposta.isEmpty() ? Constantes.NAO_INFORMADO : resposta;
+            System.out.println("Peso atual: " + pet.getPeso());
+            System.out.print("Novo peso: ");
+            String sPeso = sc.nextLine().trim();
+            if (!sPeso.isEmpty()) {
+                try {
+                    double peso = Double.parseDouble(sPeso.replace(",","."));
+                    if (Validador.validarPeso(peso)) pet.setPeso(peso);
+                    else System.out.println("Peso inválido. Mantido original.");
+                } catch (NumberFormatException e) { System.out.println("Peso inválido. Mantido original."); }
             }
-            System.out.println("Raça inválida! Apenas letras e espaços.");
-        }
-    }
 
-    // Getter para lista de pets (usado em listagem/edição/exclusão)
-    public List<Pet> getPets() {
-        return pets;
-    }
-
-
-    public List<Pet> buscarPets(TipoAnimal tipo, Map<String, String> filtros){
-        List<Pet> todosPets = arquivoService.listarTodosPets();
-
-        return todosPets.stream()
-                .filter(pet -> pet.getTipo() == tipo)
-                .filter(pet -> aplicarFiltros(pet, filtros))
-                .toList();
-    }
-
-    private boolean aplicarFiltros(Pet pet, Map<String, String> filtros) {
-
-        for (Map.Entry<String, String> entry : filtros.entrySet()) {
-            String chave = entry.getKey();
-            String valor = normalizar(entry.getValue());
-
-            switch (chave) {
-
-                case "nome":
-                    String nomePet = normalizar(pet.getNome());
-                    if (!nomePet.contains(valor)) return false;
-                    break;
-
-                case "sexo":
-                    if (!pet.getSexo().name().equalsIgnoreCase(valor)) return false;
-                    break;
-
-                case "idade":
-                    double idade = Double.parseDouble(valor);
-                    if (pet.getIdade() != idade) return false;
-                    break;
-
-                case "peso":
-                    double peso = Double.parseDouble(valor);
-                    if (pet.getPeso() != peso) return false;
-                    break;
-
-                case "raca":
-                    String raca = normalizar(pet.getRaca());
-                    if (!raca.contains(valor)) return false;
-                    break;
-
-                case "endereco":
-                    String endereco = normalizar(
-                            pet.getEndereco().getRua() + " " +
-                                    pet.getEndereco().getBairro() + " " +
-                                    pet.getEndereco().getCidade()
-                    );
-                    if (!endereco.contains(valor)) return false;
-                    break;
+            System.out.println("Raça atual: " + pet.getRaca());
+            System.out.print("Nova raça: ");
+            String novaRaca = sc.nextLine().trim();
+            if (!novaRaca.isEmpty()) {
+                if (Validador.validarRaca(novaRaca)) pet.setRaca(novaRaca);
+                else System.out.println("Raça inválida. Mantida original.");
             }
+
+            repository.salvarPet(pet);
+            System.out.println("Pet alterado com sucesso.");
+
+        } catch (Exception e) {
+            System.out.println("Erro ao alterar: " + e.getMessage());
         }
-
-        return true;
     }
 
-    public String normalizar(String texto) {
-        if (texto == null) return "";
+    // Deleta pet: lista pets, usuário seleciona, confirma (SIM/NÃO),
+    // deleta arquivo da pasta petsCadastrados.
+    public void deletar(Scanner sc) {
+        try {
+            List<Pet> pets = repository.listarTodos();
+            if (pets.isEmpty()) { System.out.println("Nenhum pet cadastrado."); return; }
 
-        String semAcento = Normalizer.normalize(texto, Normalizer.Form.NFD)
-                .replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+            System.out.println("=== Pets cadastrados ===");
+            for (int i = 0; i < pets.size(); i++) {
+                System.out.println((i+1) + ". " + pets.get(i).getNome() + " (" + pets.get(i).getTipo() + ")");
+            }
+            System.out.print("Selecione o índice: ");
+            int idx;
+            try { idx = Integer.parseInt(sc.nextLine().trim()) - 1; }
+            catch (NumberFormatException e) { System.out.println("Índice inválido."); return; }
+            if (idx < 0 || idx >= pets.size()) { System.out.println("Índice inválido."); return; }
 
-        return semAcento.toLowerCase();
+            System.out.print("Confirma exclusão de " + pets.get(idx).getNome() + "? (SIM/NÃO): ");
+            String conf = sc.nextLine().trim();
+            if ("SIM".equalsIgnoreCase(conf)) {
+                // Delete file by searching for the pet's file
+                Path pasta = Paths.get(Constantes.PASTA_PETS);
+                try (DirectoryStream<Path> stream = Files.newDirectoryStream(pasta, "*.txt")) {
+                    int count = 0;
+                    for (Path arquivo : stream) {
+                        if (count == idx) {
+                            Files.delete(arquivo);
+                            System.out.println("Pet deletado com sucesso.");
+                            return;
+                        }
+                        count++;
+                    }
+                }
+            } else {
+                System.out.println("Exclusão cancelada.");
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao deletar: " + e.getMessage());
+        }
     }
-
 }

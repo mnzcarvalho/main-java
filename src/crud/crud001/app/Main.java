@@ -2,23 +2,23 @@ package crud.crud001.app;
 
 import crud.crud001.service.ArquivoService;
 import crud.crud001.service.MenuService;
+import crud.crud001.service.PetSearchService;
 import crud.crud001.service.PetService;
+import crud.crud001.service.PetRepository;
+import crud.crud001.service.PetSearch;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ArquivoService arquivoService = new ArquivoService();
         try {
-            arquivoService.criarFormulario();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            PetRepository repository = new ArquivoService();
+            PetSearch search = new PetSearchService();
+            PetService petService = new PetService(repository, search);
+            MenuService menuService = new MenuService(petService);
+            menuService.exibir();
+        } catch (Exception e) {
+            System.out.println("Erro fatal: " + e.getMessage());
         }
-        PetService petService = new PetService();
-        MenuService menuService = new MenuService(petService);
-
-//        menuService.exibir();
     }
 }
