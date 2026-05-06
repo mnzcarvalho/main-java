@@ -8,8 +8,10 @@ import crud.crud001.util.Constantes;
 import crud.crud001.util.Validador;
 
 import java.io.IOException;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 //Toda a lógica de CRUD e busca
@@ -182,5 +184,69 @@ public class PetService {
         return pets;
     }
 
+
+    public List<Pet> buscarPets(TipoAnimal tipo, Map<String, String> filtros){
+        List<Pet> todosPets = arquivoService.listarTodosPets();
+
+        return todosPets.stream()
+                .filter(pet -> pet.getTipo() == tipo)
+                .filter(pet -> aplicarFiltros(pet, filtros))
+                .toList();
+    }
+
+    private boolean aplicarFiltros(Pet pet, Map<String, String> filtros) {
+
+        for (Map.Entry<String, String> entry : filtros.entrySet()) {
+            String chave = entry.getKey();
+            String valor = normalizar(entry.getValue());
+
+            switch (chave) {
+
+                case "nome":
+                    String nomePet = normalizar(pet.getNome());
+                    if (!nomePet.contains(valor)) return false;
+                    break;
+
+                case "sexo":
+                    if (!pet.getSexo().name().equalsIgnoreCase(valor)) return false;
+                    break;
+
+                case "idade":
+                    double idade = Double.parseDouble(valor);
+                    if (pet.getIdade() != idade) return false;
+                    break;
+
+                case "peso":
+                    double peso = Double.parseDouble(valor);
+                    if (pet.getPeso() != peso) return false;
+                    break;
+
+                case "raca":
+                    String raca = normalizar(pet.getRaca());
+                    if (!raca.contains(valor)) return false;
+                    break;
+
+                case "endereco":
+                    String endereco = normalizar(
+                            pet.getEndereco().getRua() + " " +
+                                    pet.getEndereco().getBairro() + " " +
+                                    pet.getEndereco().getCidade()
+                    );
+                    if (!endereco.contains(valor)) return false;
+                    break;
+            }
+        }
+
+        return true;
+    }
+
+    public String normalizar(String texto) {
+        if (texto == null) return "";
+
+        String semAcento = Normalizer.normalize(texto, Normalizer.Form.NFD)
+                .replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
+
+        return semAcento.toLowerCase();
+    }
 
 }

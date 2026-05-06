@@ -11,9 +11,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         ArquivoService arquivoService = new ArquivoService();
+        try {
+            arquivoService.criarFormulario();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         PetService petService = new PetService();
         MenuService menuService = new MenuService(petService);
 
-        menuService.exibir();
+//        menuService.exibir();
     }
 }
