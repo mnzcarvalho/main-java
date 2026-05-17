@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Ycolecoes/domain/Manga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Ycolecoes/domain/Manga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Ycolecoes/test/IteratorTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Ycolecoes/test/IteratorTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +89,7 @@
     "Application.RelativizeTest01.executor": "Run",
     "Application.ResolveTest01.executor": "Run",
     "Application.SerializacaoTest01.executor": "Run",
+    "Application.SetTest01.executor": "Run",
     "Application.SmarthphoneListTest01.executor": "Run",
     "Application.Test01.executor": "Run",
     "Application.Test02.executor": "Run",
@@ -123,7 +124,7 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IteratorTest01">
+  <component name="RunManager" selected="Application.SetTest01">
     <configuration name="BinarySearchTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.BinarySearchTest01" />
       <module name="main-java" />
@@ -176,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crud.crud001.app.Main" />
+    <configuration name="SetTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.SetTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="crud.crud001.app.*" />
+          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SetTest01" />
         <item itemvalue="Application.IteratorTest01" />
         <item itemvalue="Application.ListaArrayConversaoTest01" />
         <item itemvalue="Application.BinarySearchTest02" />
         <item itemvalue="Application.BinarySearchTest01" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +233,8 @@
       <workItem from="1778154042864" duration="4301000" />
       <workItem from="1778275400750" duration="383000" />
       <workItem from="1778965074201" duration="2595000" />
-      <workItem from="1778989171708" duration="1525000" />
+      <workItem from="1778989171708" duration="2840000" />
+      <workItem from="1779031116097" duration="1642000" />
     </task>
     <servers />
   </component>
