@@ -20,7 +20,7 @@ public class SetTest01 {
         mangas.add(new Manga(03L, "Frieren", 11.9, 0));
         mangas.add(new Manga(04L, "Attack on Titan", 9.9, 2));
         mangas.add(new Manga(05L, "Jujutsu Kaisen", 8.9, 0));
-        //Não duplica os elemtos, baseado com oq se tem no equals (por isso é importante sobrescrever).
+        //Não duplica os elemtos, baseado com oq se tem no @equals (por isso é importante sobrescrever).
 
         for (Manga manga : mangas) {
             System.out.println(manga);
