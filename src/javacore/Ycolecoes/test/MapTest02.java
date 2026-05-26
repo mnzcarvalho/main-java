@@ -11,17 +11,17 @@ public class MapTest02 {
         Consumidor consumidor1 = new Consumidor("Eduardo Menezes");
         Consumidor consumidor2 = new Consumidor("MNZ NET ");
 
-        Manga manga1 = new Manga(02L,"Fullmetal Alchemist: Brotherhood", 22.1);
-        Manga manga2 =new Manga(01L,"Berserk", 19.9);
-        Manga manga3 =new Manga(04L,"Attack on Titan",9.9);
-        Manga manga4 =new Manga(03L,"Frieren", 11.9);
-        Manga manga5 =new Manga(05L,"Jujutsu Kaisen", 8.9);
+        Manga manga1 = new Manga(02L, "Fullmetal Alchemist: Brotherhood", 22.1);
+        Manga manga2 = new Manga(01L, "Berserk", 19.9);
+        Manga manga3 = new Manga(04L, "Attack on Titan", 9.9);
+        Manga manga4 = new Manga(03L, "Frieren", 11.9);
+        Manga manga5 = new Manga(05L, "Jujutsu Kaisen", 8.9);
 
         Map<Consumidor, Manga> consumidorManga = new HashMap<>();
         consumidorManga.put(consumidor1, manga1);
         consumidorManga.put(consumidor2, manga4);
 
-        for (Map.Entry<Consumidor, Manga> entry : consumidorManga.entrySet()){
+        for (Map.Entry<Consumidor, Manga> entry : consumidorManga.entrySet()) {
             System.out.println(entry.getKey().getNome() + " - " + entry.getValue().getNome());
         }
     }
