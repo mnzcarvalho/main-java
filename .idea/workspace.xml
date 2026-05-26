@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Ycolecoes/test/MapTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Ycolecoes/test/MapTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +83,7 @@
     "Application.Main.executor": "Run",
     "Application.MangaSortTest01.executor": "Run",
     "Application.MapTest01.executor": "Run",
+    "Application.MapTest02.executor": "Run",
     "Application.NavigableSetTest01.executor": "Run",
     "Application.NomalizeTest01.executor": "Run",
     "Application.PathTest01.executor": "Run",
@@ -126,7 +128,7 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapTest01">
+  <component name="RunManager" selected="Application.MapTest02">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicios.LogicaBasica.ex006.Main" />
       <module name="main-java" />
@@ -153,8 +155,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigableSetTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.NavigableSetTest01" />
+    <configuration name="MapTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.MapTest02" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
@@ -166,8 +168,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.SetTest01" />
+    <configuration name="NavigableSetTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.NavigableSetTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
@@ -194,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapTest02" />
         <item itemvalue="Application.MapTest01" />
         <item itemvalue="Application.Tabuada" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.NavigableSetTest01" />
-        <item itemvalue="Application.SetTest01" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +242,8 @@
       <workItem from="1779479755191" duration="3251000" />
       <workItem from="1779558164811" duration="2317000" />
       <workItem from="1779576641683" duration="5352000" />
-      <workItem from="1779593496428" duration="1027000" />
+      <workItem from="1779593496428" duration="2438000" />
+      <workItem from="1779759755819" duration="969000" />
     </task>
     <servers />
   </component>
