@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicios/fixacao/collections/MapFixaxaoTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/fixacao/collection01/MapFixaxaoTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +86,7 @@
     "Application.MapTest01.executor": "Run",
     "Application.MapTest02.executor": "Run",
     "Application.MapTest03.executor": "Run",
+    "Application.NavigableMapTest01.executor": "Run",
     "Application.NavigableSetTest01.executor": "Run",
     "Application.NomalizeTest01.executor": "Run",
     "Application.PathTest01.executor": "Run",
@@ -129,13 +131,13 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapFixaxaoTest01">
+  <component name="RunManager" selected="Application.NavigableMapTest01">
     <configuration name="MapFixaxaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.fixacao.collections.MapFixaxaoTest01" />
+      <option name="MAIN_CLASS_NAME" value="exercicios.fixacao.collection01.MapFixaxaoTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercicios.fixacao.collections.*" />
+          <option name="PATTERN" value="exercicios.fixacao.collection01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,12 +184,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tabuada" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.LogicaBasica.ex006.Tabuada" />
+    <configuration name="NavigableMapTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.NavigableMapTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercicios.LogicaBasica.ex006.*" />
+          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NavigableMapTest01" />
         <item itemvalue="Application.MapFixaxaoTest01" />
         <item itemvalue="Application.MapTest03" />
         <item itemvalue="Application.MapTest02" />
         <item itemvalue="Application.MapTest01" />
-        <item itemvalue="Application.Tabuada" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +248,10 @@
       <workItem from="1779593496428" duration="2438000" />
       <workItem from="1779759755819" duration="1379000" />
       <workItem from="1779767938685" duration="566000" />
-      <workItem from="1779818716912" duration="3744000" />
+      <workItem from="1779818716912" duration="4545000" />
+      <workItem from="1779847195912" duration="11000" />
+      <workItem from="1779847764813" duration="1721000" />
+      <workItem from="1780875368097" duration="886000" />
     </task>
     <servers />
   </component>

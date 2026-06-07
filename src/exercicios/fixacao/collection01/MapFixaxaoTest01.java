@@ -1,4 +1,4 @@
-package exercicios.fixacao.collections;
+package exercicios.fixacao.collection01;
 
 import java.util.HashMap;
 import java.util.List;
