@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/fixacao/collections/MapFixaxaoTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/fixacao/collection01/MapFixaxaoTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +91,8 @@
     "Application.PathTest01.executor": "Run",
     "Application.PathTest02.executor": "Run",
     "Application.PathTest03.executor": "Run",
+    "Application.QueueTest01.executor": "Run",
+    "Application.QueueTest02.executor": "Run",
     "Application.RelativizeTest01.executor": "Run",
     "Application.ResolveTest01.executor": "Run",
     "Application.SerializacaoTest01.executor": "Run",
@@ -131,39 +132,13 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NavigableMapTest01">
+  <component name="RunManager" selected="Application.QueueTest02">
     <configuration name="MapFixaxaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicios.fixacao.collection01.MapFixaxaoTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercicios.fixacao.collection01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.MapTest01" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.MapTest02" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,13 +172,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QueueTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.QueueTest01" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.QueueTest02" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueueTest02" />
+        <item itemvalue="Application.QueueTest01" />
         <item itemvalue="Application.NavigableMapTest01" />
         <item itemvalue="Application.MapFixaxaoTest01" />
         <item itemvalue="Application.MapTest03" />
-        <item itemvalue="Application.MapTest02" />
-        <item itemvalue="Application.MapTest01" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +252,8 @@
       <workItem from="1779818716912" duration="4545000" />
       <workItem from="1779847195912" duration="11000" />
       <workItem from="1779847764813" duration="1721000" />
-      <workItem from="1780875368097" duration="886000" />
+      <workItem from="1780875368097" duration="1045000" />
+      <workItem from="1780917894073" duration="1820000" />
     </task>
     <servers />
   </component>
