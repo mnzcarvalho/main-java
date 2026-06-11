@@ -75,6 +75,7 @@
     "Application.BinarySearchTest01.executor": "Run",
     "Application.BinarySearchTest02.executor": "Run",
     "Application.EqualsTest01.executor": "Run",
+    "Application.GenericsTest01.executor": "Run",
     "Application.IteratorTest01.executor": "Run",
     "Application.ListSortTest01.executor": "Run",
     "Application.ListTest01.executor": "Run",
@@ -132,13 +133,13 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QueueTest02">
-    <configuration name="MapFixaxaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.fixacao.collection01.MapFixaxaoTest01" />
+  <component name="RunManager" selected="Application.GenericsTest01">
+    <configuration name="GenericsTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.GenericsTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercicios.fixacao.collection01.*" />
+          <option name="PATTERN" value="javacore.Zgenerics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.MapTest03" />
+    <configuration name="MapFixaxaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.fixacao.collection01.MapFixaxaoTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
+          <option name="PATTERN" value="exercicios.fixacao.collection01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -200,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GenericsTest01" />
         <item itemvalue="Application.QueueTest02" />
         <item itemvalue="Application.QueueTest01" />
         <item itemvalue="Application.NavigableMapTest01" />
         <item itemvalue="Application.MapFixaxaoTest01" />
-        <item itemvalue="Application.MapTest03" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +254,8 @@
       <workItem from="1779847195912" duration="11000" />
       <workItem from="1779847764813" duration="1721000" />
       <workItem from="1780875368097" duration="1045000" />
-      <workItem from="1780917894073" duration="1820000" />
+      <workItem from="1780917894073" duration="2482000" />
+      <workItem from="1781179147453" duration="1197000" />
     </task>
     <servers />
   </component>
