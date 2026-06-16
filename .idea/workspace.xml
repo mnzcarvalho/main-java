@@ -107,6 +107,7 @@
     "Application.Teste02.executor": "Run",
     "Application.Teste03.executor": "Run",
     "Application.Teste04.executor": "Run",
+    "Application.WildcardTest01.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -133,26 +134,13 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GenericsTest01">
+  <component name="RunManager" selected="Application.WildcardTest01">
     <configuration name="GenericsTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.GenericsTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="javacore.Zgenerics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapFixaxaoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.fixacao.collection01.MapFixaxaoTest01" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercicios.fixacao.collection01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -199,13 +187,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WildcardTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.WildcardTest01" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacore.Zgenerics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WildcardTest01" />
         <item itemvalue="Application.GenericsTest01" />
         <item itemvalue="Application.QueueTest02" />
         <item itemvalue="Application.QueueTest01" />
         <item itemvalue="Application.NavigableMapTest01" />
-        <item itemvalue="Application.MapFixaxaoTest01" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +256,8 @@
       <workItem from="1779847764813" duration="1721000" />
       <workItem from="1780875368097" duration="1045000" />
       <workItem from="1780917894073" duration="2482000" />
-      <workItem from="1781179147453" duration="1197000" />
+      <workItem from="1781179147453" duration="1288000" />
+      <workItem from="1781572063844" duration="931000" />
     </task>
     <servers />
   </component>
