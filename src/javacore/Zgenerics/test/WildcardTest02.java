@@ -1,4 +1,4 @@
-package javacore.Zgenerics;
+package javacore.Zgenerics.test;
 
 
 import java.util.ArrayList;

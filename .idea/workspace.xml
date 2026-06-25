@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/WildcardTest02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/WildcardTest02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/GenericsTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/test/GenericsTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/WildcardTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/test/WildcardTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/WildcardTest02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/test/WildcardTest02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +77,7 @@
     "Application.BasicFileAttributesTest02.executor": "Run",
     "Application.BinarySearchTest01.executor": "Run",
     "Application.BinarySearchTest02.executor": "Run",
+    "Application.ClasseGenericaTest01.executor": "Run",
     "Application.EqualsTest01.executor": "Run",
     "Application.GenericsTest01.executor": "Run",
     "Application.IteratorTest01.executor": "Run",
@@ -139,13 +142,13 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WildcardTest02">
-    <configuration name="GenericsTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.GenericsTest01" />
+  <component name="RunManager" selected="Application.ClasseGenericaTest01">
+    <configuration name="ClasseGenericaTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.ClasseGenericaTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacore.Zgenerics.*" />
+          <option name="PATTERN" value="javacore.Zgenerics.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueueTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.QueueTest01" />
+    <configuration name="GenericsTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.GenericsTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
+          <option name="PATTERN" value="javacore.Zgenerics.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,11 +183,11 @@
       </method>
     </configuration>
     <configuration name="WildcardTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.WildcardTest01" />
+      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.WildcardTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacore.Zgenerics.*" />
+          <option name="PATTERN" value="javacore.Zgenerics.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,11 +196,11 @@
       </method>
     </configuration>
     <configuration name="WildcardTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.WildcardTest02" />
+      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.WildcardTest02" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacore.Zgenerics.*" />
+          <option name="PATTERN" value="javacore.Zgenerics.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -207,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClasseGenericaTest01" />
         <item itemvalue="Application.WildcardTest02" />
         <item itemvalue="Application.WildcardTest01" />
         <item itemvalue="Application.GenericsTest01" />
         <item itemvalue="Application.QueueTest02" />
-        <item itemvalue="Application.QueueTest01" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +266,10 @@
       <workItem from="1780917894073" duration="2482000" />
       <workItem from="1781179147453" duration="1288000" />
       <workItem from="1781572063844" duration="1316000" />
-      <workItem from="1781622661068" duration="4222000" />
+      <workItem from="1781622661068" duration="6443000" />
+      <workItem from="1781648333479" duration="774000" />
+      <workItem from="1782182228695" duration="2000" />
+      <workItem from="1782355173346" duration="802000" />
     </task>
     <servers />
   </component>
