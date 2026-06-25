@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/GenericsTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/test/GenericsTest01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/WildcardTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/test/WildcardTest01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/WildcardTest02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/test/WildcardTest02.java" afterDir="false" />
-    </list>
+    <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,6 +134,8 @@
       <recent name="C:\Users\mnz\CODE\JAVA\main-java\home\mnz\dev" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="javacore.Zgenerics.test" />
+      <recent name="javacore.Zgenerics.service" />
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
@@ -269,7 +266,7 @@
       <workItem from="1781622661068" duration="6443000" />
       <workItem from="1781648333479" duration="774000" />
       <workItem from="1782182228695" duration="2000" />
-      <workItem from="1782355173346" duration="802000" />
+      <workItem from="1782355173346" duration="1294000" />
     </task>
     <servers />
   </component>
