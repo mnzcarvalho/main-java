@@ -10,5 +10,4 @@ public class ClasseGenericaTest01 {
         System.out.println("Usando o carro por 1 mês: ");
         carroRentavelService.retornarCarroAlugado(carro);
     }
-
 }

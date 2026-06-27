@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="" />
+    <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/test/ClasseGenericaTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/test/ClasseGenericaTest01.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +76,7 @@
     "Application.BinarySearchTest01.executor": "Run",
     "Application.BinarySearchTest02.executor": "Run",
     "Application.ClasseGenericaTest01.executor": "Run",
+    "Application.ClasseGenericaTest03.executor": "Run",
     "Application.EqualsTest01.executor": "Run",
     "Application.GenericsTest01.executor": "Run",
     "Application.IteratorTest01.executor": "Run",
@@ -114,6 +118,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mnz/CODE/JAVA/main-java/src/javacore/Zgenerics",
@@ -139,9 +144,22 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClasseGenericaTest01">
+  <component name="RunManager" selected="Application.ClasseGenericaTest03">
     <configuration name="ClasseGenericaTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.ClasseGenericaTest01" />
+      <module name="main-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacore.Zgenerics.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClasseGenericaTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.ClasseGenericaTest03" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
@@ -159,19 +177,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="javacore.Zgenerics.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueueTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Ycolecoes.test.QueueTest02" />
-      <module name="main-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javacore.Ycolecoes.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -207,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClasseGenericaTest03" />
         <item itemvalue="Application.ClasseGenericaTest01" />
         <item itemvalue="Application.WildcardTest02" />
         <item itemvalue="Application.WildcardTest01" />
         <item itemvalue="Application.GenericsTest01" />
-        <item itemvalue="Application.QueueTest02" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +271,8 @@
       <workItem from="1781622661068" duration="6443000" />
       <workItem from="1781648333479" duration="774000" />
       <workItem from="1782182228695" duration="2000" />
-      <workItem from="1782355173346" duration="1294000" />
+      <workItem from="1782355173346" duration="1724000" />
+      <workItem from="1782518413285" duration="1151000" />
     </task>
     <servers />
   </component>
