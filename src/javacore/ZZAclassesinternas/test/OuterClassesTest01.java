@@ -2,7 +2,7 @@ package javacore.ZZAclassesinternas.test;
 
 public class OuterClassesTest01 {
         private String name = "Monkey D. Luffy";
-
+        //Nested
         class Inner {
             public void printOuterClassAtribute (){
                 System.out.println(name);
