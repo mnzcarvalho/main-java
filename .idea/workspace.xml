@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90e7b2e1-4387-4308-83fc-44dc40909008" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacore/ZZAclassesinternas/test/OuterClassesTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/ZZAclassesinternas/test/OuterClassesTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacore/Zgenerics/domain/Barco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacore/Zgenerics/domain/Barco.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +65,29 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Ask" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AnonymousClassTest01.executor": "Run",
+    "Application.AnonymousClassTest02.executor": "Run",
     "Application.BasicFileAttributesTest01.executor": "Run",
     "Application.BasicFileAttributesTest02.executor": "Run",
     "Application.BinarySearchTest01.executor": "Run",
@@ -125,7 +142,7 @@
     "copilot.chat.legacySessionMetadata.migrated": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mnz/CODE/JAVA/main-java/src/javacore/Zgenerics",
+    "last_opened_file_path": "C:/Users/mnz/CODE/JAVA/main-java/src/javacore/ZZAclassesinternas/test",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -136,6 +153,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mnz\CODE\JAVA\main-java\src\javacore\ZZAclassesinternas\test" />
       <recent name="C:\Users\mnz\CODE\JAVA\main-java\src\javacore\Zgenerics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -148,13 +166,13 @@
       <recent name="javacore.Ycolecoes.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OuterClassTest02">
-    <configuration name="ClasseGenericaTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.ClasseGenericaTest03" />
+  <component name="RunManager" selected="Application.AnonymousClassTest02">
+    <configuration name="AnonymousClassTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.ZZAclassesinternas.test.AnonymousClassTest01" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacore.Zgenerics.test.*" />
+          <option name="PATTERN" value="javacore.ZZAclassesinternas.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MetodoGenericoTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacore.Zgenerics.test.MetodoGenericoTest01" />
+    <configuration name="AnonymousClassTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacore.ZZAclassesinternas.test.AnonymousClassTest02" />
       <module name="main-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacore.Zgenerics.test.*" />
+          <option name="PATTERN" value="javacore.ZZAclassesinternas.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnonymousClassTest02" />
+        <item itemvalue="Application.AnonymousClassTest01" />
         <item itemvalue="Application.OuterClassTest02" />
         <item itemvalue="Application.OuterClassesTest01 (1)" />
         <item itemvalue="Application.OuterClassesTest01" />
-        <item itemvalue="Application.MetodoGenericoTest01" />
-        <item itemvalue="Application.ClasseGenericaTest03" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +297,8 @@
       <workItem from="1782518413285" duration="2129000" />
       <workItem from="1782610508897" duration="1665000" />
       <workItem from="1782692276348" duration="1649000" />
-      <workItem from="1782786453474" duration="1116000" />
+      <workItem from="1782786453474" duration="2027000" />
+      <workItem from="1782946928899" duration="1094000" />
     </task>
     <servers />
   </component>
